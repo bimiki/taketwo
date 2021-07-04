@@ -2,12 +2,13 @@
   "name": "taketwo",
   "private": true,
   "dependencies": {
+    "@hotwired/turbo-rails": "^7.0.0-beta.8",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.4.0",
     "postcss": "^7.0.36",
-    "turbolinks": "^5.2.0",
+    "stimulus": "^2.0.0",
     "webpack": "4.46.0",
     "webpack-cli": "3.3.12"
   },
