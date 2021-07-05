@@ -1,10 +1,5 @@
-body {
-  background:url(light.gif);
-  background: stretch;
-  color: #333;
-  margin: 33px; }
 
-body, p, ol, ul, td {
+body, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 15;
   line-height: 18px;
@@ -33,6 +28,13 @@ td {
 div.field,
 div.actions {
   margin-bottom: 10px; }
+h1, p {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  color: white;
+}
 
 #notice {
   color: green; }
@@ -64,6 +66,10 @@ div.actions {
 
 label {
   display: block; }
+
+.background {
+background: url(light.gif);
+}
   .wrapper {
     text-align: center;
     height: 30px;
