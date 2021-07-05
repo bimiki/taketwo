@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_04_231502) do
+ActiveRecord::Schema.define(version: 2021_07_05_163801) do
 
   create_table "feeds", force: :cascade do |t|
     t.string "eggs"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "mainthreads", force: :cascade do |t|
+    t.string "name"
+    t.string "info"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

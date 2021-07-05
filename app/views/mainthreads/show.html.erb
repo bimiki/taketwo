@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @mainthread.name %>
+</p>
+
+<p>
+  <strong>Info:</strong>
+  <%= @mainthread.info %>
+</p>
+
+<%= link_to 'Edit', edit_mainthread_path(@mainthread) %> |
+<%= link_to 'Back', mainthreads_path %>

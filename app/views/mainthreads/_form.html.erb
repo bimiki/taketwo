@@ -1,0 +1,27 @@
+<%= form_with(model: mainthread) do |form| %>
+  <% if mainthread.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mainthread.errors.count, "error") %> prohibited this mainthread from being saved:</h2>
+
+      <ul>
+        <% mainthread.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :info %>
+    <%= form.text_field :info %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
