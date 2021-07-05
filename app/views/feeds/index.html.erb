@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Feed</h1>
-
+<span class="wrapper">Feed <%= link_to 'MORE EGGS', new_feed_path %></span>
+<br>
   <tbody>
     <% @feeds.each do |feed| %>
       <ul>
@@ -13,8 +13,6 @@
       </ul>
     <% end %>
   </tbody>
-</table>
+
 
 <br>
-
-<%= link_to 'New Feed', new_feed_path %>
