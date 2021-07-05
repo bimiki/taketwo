@@ -1,2 +1,3 @@
 class Mainthread < ApplicationRecord
+
 end

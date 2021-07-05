@@ -4,12 +4,22 @@
 <span class="wrapper">Mainthreads <%= link_to 'add info', new_mainthread_path %></span>
 
 
+<div class="max-w-sm rounded overflow-hidden shadow-lg mx-auto my-8">
+  <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+
+  </div>
+</div>
+
+
 <table>
   <tbody>
     <% @mainthreads.each do |mainthread| %>
+
 <br>
 <br>
-        <span style="background-color: white;"><%= mainthread.name %><%= mainthread.info %></span>
+        <span style="background-color: white;"><%= mainthread.name %> <br> <%= mainthread.info %></span>
         <br> </br><!--just to keep the buttons seperate-->
         <button><%= link_to 'Show', mainthread %></button>
         <button><%= link_to 'Edit', edit_mainthread_path(mainthread) %></button>
