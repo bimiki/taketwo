@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Mainthreads</h1>
 <var class="wrapper">Mainthreads <%= link_to 'add info', new_mainthread_path %></var>
@@ -9,13 +8,13 @@
 
 <br>
 <br>
-      <div>
+      <tb>
         <span style="background-color: white;" class="RGB"><%= mainthread.name %> <br> <%= mainthread.info %></span>
         <br> </br><!--just to keep the buttons seperate-->
-        <button><%= link_to 'Show', mainthread %></button>
-        <button><%= link_to 'Edit', edit_mainthread_path(mainthread) %></button>
-        <button><%= link_to 'Destroy', mainthread, method: :delete, data: { confirm: 'Are you sure?' } %></button>
-      </div>
+        <tb><%= link_to 'Show', mainthread %></tb>
+        <tb><%= link_to 'Edit', edit_mainthread_path(mainthread) %></tb>
+        <tb><%= link_to 'Destroy', mainthread, method: :delete, data: { confirm: 'Are you sure?' } %></tb>
+      </tb>
     <% end %>
   </tbody>
 </table>
