@@ -9,12 +9,13 @@
 
 <br>
 <br>
-        <span style="background-color: white;"><%= mainthread.name %> <br> <%= mainthread.info %></span>
+      <div>
+        <span style="background-color: white;" class="RGB"><%= mainthread.name %> <br> <%= mainthread.info %></span>
         <br> </br><!--just to keep the buttons seperate-->
         <button><%= link_to 'Show', mainthread %></button>
         <button><%= link_to 'Edit', edit_mainthread_path(mainthread) %></button>
         <button><%= link_to 'Destroy', mainthread, method: :delete, data: { confirm: 'Are you sure?' } %></button>
-
+      </div>
     <% end %>
   </tbody>
 </table>

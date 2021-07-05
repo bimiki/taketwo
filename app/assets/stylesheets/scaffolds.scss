@@ -3,7 +3,9 @@ body, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 15;
   line-height: 18px;
-  text-align: center;}
+  text-align: center;
+
+  }
 pre {
   background-color: #eee;
   padding: 10px;
@@ -17,6 +19,7 @@ a:visited {
 
 a:hover {
   color: blue;
+  border-style: outset;
   background-color: red; }
 
 th {
@@ -71,9 +74,10 @@ label {
 background: url(light.gif);
 }
   .wrapper {
+    border-radius: 20px;
     text-align: center;
     height: 30px;
-
+    border-style: outset;
     padding: 7px 7px 0;
     left:0;
     right:0;
