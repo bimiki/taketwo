@@ -1,12 +1,38 @@
-
+.maincontent {
+  color: red;
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  height: 30px;
+  padding: 7px 7px 0;
+}
+.buttons {
+  color: pink;
+  background-color: cyan;
+  border-radius: 13px;
+  text-align: center;
+  height: 25px;
+  padding: 7px 7px 0;
+}
 body, ol, ul, td {
+  background: url(light.gif) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  width:  auto;
+
+  font-size: 20px;
+  font-family: 'sans', bold;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 15;
   line-height: 18px;
-  text-align: center;
+  text-align: left;
   border-radius: 20px;
+}
 
-  }
+
 pre {
   background-color: #eee;
   padding: 10px;
@@ -71,9 +97,7 @@ h1, p {
 label {
   display: block; }
 
-.background {
-background: url(light.gif);
-}
+
   .wrapper {
     border-radius: 20px;
     text-align: center;

@@ -9,7 +9,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body class="background">
+  <body>
 
 
     <ul class="navbar-nav mr-auto">
@@ -18,14 +18,16 @@
   </li>
   ...
 </ul>
-
-<p class="navbar-text float-right">
+<br/>
+<p>
 <% if user_signed_in? %>
+<%= image_tag(current_user.avatar_thumbnail) %>
+</p>
+<p class="wrapper">
   Logged in as <strong><%= current_user.email %></strong>.
   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
   <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
   <br />
-  <%= image_tag(current_user.avatar_thumbnail) %>
 <% else %>
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
