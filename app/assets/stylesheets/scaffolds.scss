@@ -14,7 +14,8 @@
   height: 25px;
   padding: 7px 7px 0;
 }
-body, ol, ul, td {
+
+body,{
   background: url(light.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -22,14 +23,12 @@ body, ol, ul, td {
   background-size: cover;
 
   width:  auto;
-
-  font-size: 20px;
+  font-size: 10px;
   font-family: 'sans', bold;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 15;
   line-height: 18px;
   text-align: left;
-  border-radius: 20px;
 }
 
 
@@ -55,7 +54,12 @@ th {
 td {
   padding: 0 5px 7px; }
 
-div.field,
+div.field,{
+  padding: 30px;
+  border: 2px color red;
+  text-decoration-color: red;
+  color: white;
+}
 div.actions {
   margin-bottom: 10px; }
 h1, p {
