@@ -7,6 +7,7 @@ class MainthreadsController < ApplicationController
     @mainthreads = Mainthread.all
   end
 
+
   # GET /mainthreads/1 or /mainthreads/1.json
   def show
   end
