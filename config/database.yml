@@ -1,3 +1,16 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: taketwo_production
+  pool: 5
+  username: postgres
+  password: 
+
+
+
+
+
+
 development:
   adapter: postgresql
   encoding: unicode
