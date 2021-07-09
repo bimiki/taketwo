@@ -1,6 +1,6 @@
-
+<div class="card">
 <h1>Main Info area</h1>
-
+<div class="container">
   <p class="buttons"><%= link_to 'add info', new_mainthread_path %></p>
     <% @mainthreads.each do |mainthread| %>
 <br>
@@ -16,3 +16,5 @@
         <tb class="buttons"><%= link_to 'Destroy', mainthread, method: :delete, data: { confirm: 'Are you sure?' } %></tb>
       </table>
     <% end %>
+</div>
+</div>
