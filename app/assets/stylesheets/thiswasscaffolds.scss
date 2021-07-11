@@ -1,3 +1,6 @@
+
+
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -30,6 +33,7 @@
   padding: 7px 7px 0;
 }
 .buttons {
+
   color: pink;
   background-color: cyan;
   border-radius: 13px;
@@ -37,6 +41,43 @@
   height: 25px;
   padding: 7px 7px 0;
 }
+
+.profileA {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 5px;
+  border: 1px solid blue;
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+    animation: rainbow 18s ease infinite;}
+
+    @-webkit-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-moz-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @-o-keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+    @keyframes rainbow {
+        0%{background-position:0% 82%}
+        50%{background-position:100% 19%}
+        100%{background-position:0% 82%}
+    }
+
+
 
 body{
   background: url(https://media.giphy.com/media/gVtllXU88xcZi/giphy.gif) no-repeat center center fixed; alt: url(light);
