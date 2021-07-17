@@ -8,7 +8,8 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
 
   <body>
 <br/>
@@ -38,6 +39,7 @@
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 
+<%= turbo_frame_tag 'mainthreads' %>
     <%= yield %>
   </body>
 </html>

@@ -1,17 +1,13 @@
-<div class="card">
-<h1>Main Info area</h1>
-<div class="container">
-  <p class="buttons"><%= link_to 'add info', new_mainthread_path %></p>
-    <% @mainthreads.each do |mainthread| %>
-<br>
-<br>
+<% turbo_stream_from "mainthreads" %>
 
-        <span style="display: inline-block; flex;" class="maincontent"><%= mainthread.name %></span>
-        <span style="display: inline-block;" class="maincontent"><%= mainthread.info %></span>
-        <br/>
-        <br/>
-        <br/><!--just to keep the buttons seperate-->
-    <%= button_to 'Delete', mainthread, method: :delete, data: { confirm: 'Are you sure?' } %>
-    <% end %>
-</div>
-</div>
+<h1>Main Info area</h1>
+
+<% turbo_frame_tag 'mainthread_form' do %>
+
+<%= render 'form', mainthread: @mainthread %>
+
+<% end %>
+
+<%= turbo_frame_tag "mainthreads" do %>
+ <% render @mainthread %>
+<% end %>

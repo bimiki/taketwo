@@ -5,6 +5,7 @@ class MainthreadsController < ApplicationController
   # GET /mainthreads or /mainthreads.json
   def index
     @mainthreads = Mainthread.all
+    @mainthread = Mainthread.new
   end
 
 
