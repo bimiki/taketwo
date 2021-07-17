@@ -1,12 +1,12 @@
 <%= turbo_frame_tag dom_id(mainthread) do %>
 <div class="card">
   <div class="card-body">
-    <%= @mainthreads.name %>
+    <%= @mainthread.name %>
     <div class="btn-group float-right">
-      <%= link_to "delete", class: 'btn btn-secondary' %>
+      <%= link_to "delete", mainthread, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-secondary' %>
     </div>
     <div class="card-body">
-      <%= @mainthreads.info %>
+      <%= @mainthread.info %>
     </div>
   </div>
 </div>
