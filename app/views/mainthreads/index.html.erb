@@ -3,6 +3,7 @@
 <h1>Main Info area</h1>
 
 <% turbo_frame_tag 'mainthread_form' do %>
+<%= link_to 'add info', new_mainthread_path %>
 <%= render 'form', mainthread: @mainthread %>
 <% end %>
 

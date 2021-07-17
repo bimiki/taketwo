@@ -52,7 +52,9 @@ class MainthreadsController < ApplicationController
 
   # DELETE /mainthreads/1 or /mainthreads/1.json
   def destroy
-    @mainthread.destroy = @destroy
+    @mainthread = Mainthread.destroy
+    @mainthread.destroy
+
     respond_to do |format|
       format.html { redirect_to mainthreads_url, notice: "Mainthread was successfully destroyed." }
       format.json { head :no_content }
