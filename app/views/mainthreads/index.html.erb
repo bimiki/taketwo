@@ -2,11 +2,15 @@
 
 <h1>Main Info area</h1>
 
-<% turbo_frame_tag 'mainthread_form' do %>
+<% turbo_frame_tag 'form1' do %>
 <%= link_to 'add info', new_mainthread_path %>
 <%= render 'form', mainthread: @mainthread %>
 <% end %>
 
 <%= turbo_frame_tag "mainthreads" do %>
- <% render @mainthreads %>
+ <%= render @mainthreads %>
 <% end %>
+
+<%= turbo_frame_tag 'message' do %>
+ <%= render 'form', message: @message %>
+ <% end %>
