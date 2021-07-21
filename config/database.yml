@@ -12,7 +12,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: takwtwo_test
+  database: taketwo_test
   pool: 5
   username: taketwo
   password: 2020
